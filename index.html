@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareTheHybrid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-text"> <!-- Added the text of the logo on the header -->
+            CompareTheHybrid
+        </div>
+    </header>
+
+
+    <div class="header">
+        <select id="carSelection1" onchange="updateDisplay()">
+            <!-- Selection Car Boxes these let the user pick what cars to compare -->
+            <option value="">Select a Car</option>
+            <option value="car1">Alfa Romeo Tronale</option>
+            <option value="car2">Audi A3</option>
+            <option value="car3">BMW X1</option>
+            <option value="car4">Citroen C5 Aircross</option>
+            <option value="car5">CUPRA Leon</option>
+            <option value="car6">Dacia Jogger</option>
+            <option value="car7">DS Automobiles DS 9</option>
+            <option value="car8">Ford Fiesta</option>
+            <option value="car9">Honda Civic</option>
+            <option value="car10">Hyundai Kona</option>
+            <option value="car11">Jaguar F-pace</option>
+            <option value="car12">Jeep Grand Cherokee</option>
+            <option value="car13">KIA Niro</option>
+            <option value="car14">Land Rover Range Rover Evoque</option>
+            <option value="car15">Lexus LBX</option>
+            <option value="car16">Mazda CX-60</option>
+            <option value="car17">Mercedes-Benz B Class</option>
+            <option value="car18">MG MG3</option>
+            <option value="car19">Nissan Juke</option>
+            <option value="car20">Peugeot 2008</option>
+            <option value="car21">Porsche Cayenne</option>
+            <option value="car22">Renault Clio</option>
+            <option value="car23">SEAT Leon</option>
+            <option value="car24">SKODA Octavia</option>
+            <option value="car25">Subaru Forester</option>
+            <option value="car26">Suzuki Swift</option>
+            <option value="car27">Toyota Yaris</option>
+            <option value="car28">Vauxhall Corsa</option>
+        </select>
+        <select id="carSelection2" onchange="updateDisplay()">
+            <!-- I added the second car selection box and sorted the cars A-Z-->
+            <option value="">Select a Car</option>
+            <option value="car1">Alfa Romeo Tronale</option>
+            <option value="car2">Audi A3</option>
+            <option value="car3">BMW X1</option>
+            <option value="car4">Citroen C5 Aircross</option>
+            <option value="car5">CUPRA Leon</option>
+            <option value="car6">Dacia Jogger</option>
+            <option value="car7">DS Automobiles DS 9</option>
+            <option value="car8">Ford Fiesta</option>
+            <option value="car9">Honda Civic</option>
+            <option value="car10">Hyundai Kona</option>
+            <option value="car11">Jaguar F-pace</option>
+            <option value="car12">Jeep Grand Cherokee</option>
+            <option value="car13">KIA Niro</option>
+            <option value="car14">Land Rover Range Rover Evoque</option>
+            <option value="car15">Lexus LBX</option>
+            <option value="car16">Mazda CX-60</option>
+            <option value="car17">Mercedes-Benz B Class</option>
+            <option value="car18">MG MG3</option>
+            <option value="car19">Nissan Juke</option>
+            <option value="car20">Peugeot 2008</option>
+            <option value="car21">Porsche Cayenne</option>
+            <option value="car22">Renault Clio</option>
+            <option value="car23">SEAT Leon</option>
+            <option value="car24">SKODA Octavia</option>
+            <option value="car25">Subaru Forester</option>
+            <option value="car26">Suzuki Swift</option>
+            <option value="car27">Toyota Yaris</option>
+            <option value="car28">Vauxhall Corsa</option>
+        </select>
+    </div>
+    </div>
+    <div class="container">
+    </div>
+    <div class="info-boxes">
+    </div>
+</body>
+<div class="container"> <!-- Added Car Info containers these store the car info and images -->
+    <div id="car1" class="car">
+        <h2>Alfa Romeo Tonale</h2>
+        <img src="https://www.alfaromeo-saudi.com/content/dam/alfa/cross/tonale- 
+ mp/trim/Trim-Tonale_Ti.png" alt="Alfa Romeo Tonale">
+        <!-- Added alt-text incase the images doesnt load as the images are not locally saved this error may occur so adding AltText is a possible soloution to use-->
+        <p>Price Range: £30,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 49.60</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 28E</p>
+
+
+    </div>
+    <div id="car2" class="car">
+        <h2>Audi A3</h2>
+        <img src="https://cdn.wheel-size.com/thumbs/80/16/80165c459810cc41e4fa8cc2b23f1fc6.png" alt="Audi A3">
+        <p>Price Range: £35,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 1.4L</p>
+        <p>MPG: 217.30</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 26E</p>
+
+    </div>
+    <div id="car3" class="car">
+        <h2>BMW X1</h2>
+        <img src="https://images.carprices.com/pricebooks_data/usa/colorized/2024/BMW/View2/X1/xDrive28i/24XB_300.png"
+            alt="BMW X1">
+        <p>Price Range: £43,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 50.40</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 26E</p>
+    </div>
+
+    <div id="car4" class="car">
+        <h2>Citroen C5 Aircross</h2>
+        <img src="https://flexed.co.uk/wp-content/uploads/2024/01/Citroen-C5-AIRCROSS-Hatchback-Flexed-Model-min.png"
+            alt="Citroen C5 Aircross">
+        <p>Price Range: £26,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.2L</p>
+        <p>MPG: 53.30</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 28E</p>
+    </div>
+
+    <div id="car5" class="car">
+        <h2>CUPRA Leon</h2>
+        <img src="https://web21st.imgix.net/assets/images/new-vehicles/cupra/cupra-leon-2020-vz2-quarter-magnetic-grey.png?w=1500&dpr=2"
+            alt="Cupra Leon">
+        <p>Price Range: £29,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 46.30</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 21E</p>
+    </div>
+
+    <div id="car6" class="car">
+        <h2>Dacia Jogger</h2>
+        <img src="https://offers.dacia.co.uk/Resources/Images/Models/Jogger-Extreme-Packshot.jpg" alt="Dacia Jogger">
+        <p>Price Range: £24,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.6L</p>
+        <p>MPG: 57.60</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 16E</p>
+    </div>
+
+    <div id="car7" class="car">
+        <h2>DS Automobiles DS 9</h2>
+        <img src="https://cdn.imagin.studio/getImage?customer=robinsandday&make=ds&modelFamily=ds9&modelRange=ds9&modelVariant=od&paintId=6740&zoomType=fullscreen&steering=right&width=800&angle=01&fileType=png"
+            alt="DS Automobiles DS 9">
+        <p>Price Range: £49,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 1.6L</p>
+        <p>MPG: 353.10</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 41E</p>
+    </div>
+
+    <div id="car8" class="car">
+        <h2>Ford Fiesta</h2>
+        <img src="https://www.thornburymotors.co.uk/img/new-cars/thumbs/2023/fiesta-hybrid.png" alt="Ford Fiesta">
+        <p>Price Range: £22,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.0L</p>
+        <p>MPG: 56.50</p>
+        <p>Transmission: Manual</p>
+        <p>Insurance Group: 17E</p>
+    </div>
+
+    <div id="car9" class="car">
+        <h2>Honda Civic</h2>
+        <img src="https://www.honda.co.uk/content/dam/central/cars/civic-hybrid/overview-v3/Honda-civic-hybrid-17-16x9.png/_jcr_content/renditions/c3.png"
+            alt="Honda Civic">
+        <p>Price Range: £30,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 2.0L</p>
+        <p>MPG: 56.50</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 28E</p>
+    </div>
+
+    <div id="car10" class="car">
+        <h2>Hyundai Kona</h2>
+        <img src="https://www.hutchings.co.uk/assets/brands/hyundai/kona-hybrid/hyundai__kona_full_hybrid_se-connect_v2_atlaswhite_1.png"
+            alt="Hyundai Kona">
+        <p>Price Range: £35,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.6L</p>
+        <p>MPG: 60.10</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 18A</p>
+    </div>
+
+    <div id="car11" class="car">
+        <h2>Jaguar F-pace</h2>
+        <img src="https://cdn.dicklovett.co.uk/uploads/new_vehicle/4_186.png?v=1708957898"
+            alt="Jaguar F-pace">
+        <p>Price Range: £70,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 2.0L</p>
+        <p>MPG: 60.10</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 48E</p>
+    </div>
+
+    <div id="car12" class="car">
+        <h2>Jeep Grand Cherokee</h2>
+        <img src="https://www.jeep.co.uk/content/dam/jeep/crossmarket/model/grand-cherokee-my22/overview/colorizer/summit-reserve/figurines/jeep-grand-cherokee-4xe-summit-reserve-sylver-zynith-565x330.png"
+            alt="Jeep Grand Cherokee">
+        <p>Price Range: £75,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 2.0L</p>
+        <p>MPG: 56</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 48E</p>
+    </div>
+
+    <div id="car13" class="car">
+        <h2>KIA Niro</h2>
+        <img src="https://www.kia.com/content/dam/kwcms/kme/uk/en/assets/motability/2022/Niro-HEV-512x288.png"
+            alt="KIA Niro">
+        <p>Price Range: £30,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.6L</p>
+        <p>MPG: 60.10</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 21A</p>
+    </div>
+
+    <div id="car14" class="car">
+        <h2>Land Rover Range Rover Evoque</h2>
+        <img src="https://www.lloydmotorgroup.com/ImageLibrary/images/Land-Rover/Retail/Master/New-Car-Range-Model/Evoque/Model%20Card/Range-Rover-Evoque-Dynamic-SE-24MY-Model-Card.png"
+            alt="Land Rover Range Rover Evoque">
+        <p>Price Range: £55,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 195.90</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 39E</p>
+    </div>
+
+    <div id="car15" class="car">
+        <h2>Lexus LBX</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEJ6CjEjcbdtst6DeETkOwyb8bwbehPy8IG4GvgiLAw&s"
+            alt="Lexus LBX">
+        <p>Price Range: £35,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 61.40</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 24P</p>
+    </div>
+
+    <div id="car16" class="car">
+        <h2>Mazda CX-60</h2>
+        <img src="https://media-assets.mazda.eu/image/upload/q_auto,f_auto/mazdauk/globalassets/cars/mazda-cx-60/clearcuts/lhd_kr9peak_46v_7-8.png?rnd=49f555"
+            alt="Mazda CX-60">
+        <p>Price Range: £45,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 2.5L</p>
+        <p>MPG: 188.30</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 39A</p>
+    </div>
+
+    <div id="car17" class="car">
+        <h2>Mercedes-Benz B Class</h2>
+        <img src="https://www.mercedes-benz.co.uk/content/dam/hq/passengercars/cars/B-Class/b-class-sports-tourer-w247-pi/modeloverview/09-2022/images/mercedes-benz-b-class-w247-modeloverview-696x392-09-2022.png"
+            alt="Mercedes-Benz B Class">
+        <p>Price Range: £37,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.3L</p>
+        <p>MPG: 44.80</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 23E</p>
+    </div>
+
+    <div id="car18" class="car">
+        <h2>MG MG3</h2>
+        <img src="https://www.mg.co.uk/sites/default/files/2024-02/mg3%20hybrid%2B%20side%20car.png"
+            alt="MG MG3">
+        <p>Price Range: £20,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 64.20</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 08E</p>
+    </div>
+
+    <div id="car19" class="car">
+        <h2>Nissan Juke</h2>
+        <img src="https://www.westway.co.uk/assets/brands/nissan/juke/Nissan%20Juke%20NConnecta%20ICE%20image2%20801x375px.png"
+            alt="Nissan Juke">
+        <p>Price Range: £29,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.6L</p>
+        <p>MPG: 56.50</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 15E</p>
+    </div>
+
+    <div id="car20" class="car">
+        <h2>Peugeot 2008</h2>
+        <img src="https://cdn.imagin.studio/getImage?customer=robinsandday&capId=103131&capVehicleType=car&zoomType=fullscreen&steering=right&width=800&angle=01&paintId=pspc0285&fileType=png"
+            alt="Peugeot 2008">
+        <p>Price Range: £25,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.2L</p>
+        <p>MPG: 48.30</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 19E</p>
+    </div>
+
+    <div id="car21" class="car">
+        <h2>Porsche Cayenne</h2>
+        <img src="https://images.dealer.com/ddc/vehicles/2022/Porsche/Cayenne%20E-Hybrid/SUV/perspective/front-left/2022_24.png"
+            alt="Porsche Cayenne">
+        <p>Price Range: £105,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 3.0L</p>
+        <p>MPG: 188.30</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 49E</p>
+    </div>
+
+    <div id="car22" class="car">
+        <h2>Renault Clio</h2>
+        <img src="https://www.renault.co.uk/agg/vn/unique/grade_carrousel_main_1_small/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fuk.co.rplug.renault.com%2Fproduct%2Fmodel%2FCL5%2Fclio%2Fc%2FA-ENS_0MDL2PSL1SERIESPE1_-TEKQJ"
+            alt="Renault Clio">
+        <p>Price Range: £20,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.6L</p>
+        <p>MPG: 65.70</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 15E</p>
+    </div>
+
+    <div id="car23" class="car">
+        <h2>SEAT Leon</h2>
+        <img src="https://www.electrifying.com/files/OLwcB1OFUkaHsLbA/leon-cutout.png" alt="SEAT Leon">
+        <p>Price Range: £20,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.0L</p>
+        <p>MPG: 49.60</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 12E</p>
+    </div>
+
+    <div id="car24" class="car">
+        <h2>SKODA Octavia</h2>
+        <img src="https://cdn.skoda-storyboard.com/2020/11/Octavia-iV-3-4.png" alt="SKODA Octavia">
+        <p>Price Range: £35,000</p>
+        <p>Fuel Type: Petrol Plug-in Hybrid</p>
+        <p>Engine Size: 1.4L</p>
+        <p>MPG: 289.50</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 22E</p>
+    </div>
+
+    <div id="car25" class="car">
+        <h2>Subaru Forester</h2>
+        <img src="https://www.just-auto.com/wp-content/uploads/sites/30/2022/09/Small-2879-SubaruForester-ModelYearMY2022EuropeanSpecification.jpg"
+            alt="Subaru Forester">
+        <p>Price Range: £35,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 2.0L</p>
+        <p>MPG: 34.70</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 23E</p>
+    </div>
+
+    <div id="car26" class="car">
+        <h2>Suzuki Swift</h2>
+        <img src="https://media.umbraco.io/suzuki-gb/p3sammwg/swift_motion_hybrid_2024_505_transparent.png"
+            alt="Suzuki Swift">
+        <p>Price Range: £17,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.2L</p>
+        <p>MPG: 64.20</p>
+        <p>Transmission: Manual</p>
+        <p>Insurance Group: 20D</p>
+    </div>
+
+    <div id="car27" class="car">
+        <h2>Toyota Yaris</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKsXZgbbSqf1HOPW_KRElWD8SKjqa_0at5odHcHaZKgw&s"
+            alt="Toyota Yaris">
+        <p>Price Range: £20,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 68.90</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 14E</p>
+    </div>
+
+    <div id="car28" class="car">
+        <h2>Vauxhall Corsa</h2>
+        <img src="https://cdn.imagin.studio/getImage?customer=robinsandday&capId=102123&capVehicleType=car&modelYear=2024&paintId=156804&zoomType=fullscreen&steering=right&width=800&angle=01&fileType=png"
+            alt="Vauxhall Corsa">
+        <p>Price Range: £27,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.2L</p>
+        <p>MPG: 60.10</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 23E</p>
+    </div>
+
+    <div id="car29" class="car">
+        <h2>Volkswagen Golf</h2>
+        <img src="https://www.greenncap.com/wp-content/uploads/VW-Golf_2021_0081-478x320.png" alt="Volkswagen Golf">
+        <p>Price Range: £25,000</p>
+        <p>Fuel Type: Petrol Hybrid</p>
+        <p>Engine Size: 1.5L</p>
+        <p>MPG: 51.40</p>
+        <p>Transmission: Automatic</p>
+        <p>Insurance Group: 20E</p>
+    </div>
+
+    <script>
+        function updateDisplay() {
+            document.querySelectorAll('.car').forEach(car => {
+                car.style.display = 'none';
+            });
+
+            var car1 = document.getElementById('carSelection1').value;
+            var car2 = document.getElementById('carSelection2').value;
+
+            if (car1) {
+                document.getElementById(car1).style.display = 'block';
+            }
+            if (car2) {
+                document.getElementById(car2).style.display = 'block';
+            }
+        }
+    </script>
+    <div class="info-boxes">
+        <div class="info">
+            <h3>1️⃣ Select The Cars You Want To Compare</h3>
+            <p>Select A Hybrid Car From Various Manufacturers And A Model</p>
+        </div>
+        <div class="info">
+            <h3>2️⃣ View The Car Comparison</h3>
+            <p>View the Outputted Car Comparisons and Pick Which Car You Prefer</p>
+        </div>
+        <div class="info">
+            <h3>3️⃣ Purchase Your Dream Car</h3>
+            <p>If You Are Happy Enquire for the Vehicle at Your Local Car Dealership</p>
+        </div>
+    </div>
+    </body>
+
+</html>
